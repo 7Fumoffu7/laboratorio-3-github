@@ -11,7 +11,7 @@ limit = int(MAX ** 0.5) + 1
 for i in range(2, limit):
     if prime[i]:
         prime[i*i:MAX+1:i] = b'\x00' * ((MAX - i*i)//i + 1)
-
+#comentando para el commit
 pref = [0] * (MAX + 1)
 count = 0
 for i in range(MAX + 1):
